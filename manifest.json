@@ -1,0 +1,21 @@
+{
+"manifest_version": 2 ,
+"name":"design mode",
+"version":"1.0",
+"description":"edit the websites ",
+"icons":{
+    "128":"icon128.png",
+    "48":"icon48.png",
+    "16":"icon16.png"
+},
+"browser_action":{
+    "default_icon":"icon16.png",
+    "default_popup":"popup.html",
+    "default_title":"used to edit a website"
+},
+"content_scripts":[
+    {"matches":["<all_urls>"],
+    "js":["design.js"]}
+]
+
+}
